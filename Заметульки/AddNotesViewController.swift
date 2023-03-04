@@ -12,12 +12,20 @@ class AddNotesViewController: UIViewController {
     @IBOutlet var textField: UITextField!
     let userDefaults = UserDefaults.standard
 
+    @IBOutlet var saveButton: UIButton!
     var delegate: AllNotesViewControllerDelegate!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        func textFieldShouldClear(_ textField: UITextField) -> Bool {
+            saveButton.isEnabled = false
+            return true
+        }
+
         textField.layer.cornerRadius = 30
     }
+
     @IBAction func saveTapped(_ sender: UIButton) {
         saveDate()
     }
@@ -32,5 +40,7 @@ class AddNotesViewController: UIViewController {
         delegate.addAddress(city: notes)
         dismiss(animated: true)
     }
+
+
 
 }

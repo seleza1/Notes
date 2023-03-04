@@ -29,7 +29,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHQ-TY-Ery">
-                                                    <rect key="frame" x="20" y="11" width="0.0" height="0.0"/>
+                                                    <rect key="frame" x="20" y="11" width="0.0" height="14"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -69,7 +69,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QlG-vc-Btv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1315.9420289855072" y="-70.108695652173921"/>
+            <point key="canvasLocation" x="1314.4927536231885" y="-70.3125"/>
         </scene>
         <!--Add Notes View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -111,6 +111,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="6yJ-J0-tBx"/>
                     <connections>
+                        <outlet property="saveButton" destination="JHT-SV-29L" id="YMA-Dz-Nil"/>
                         <outlet property="textField" destination="0D7-Hx-vNY" id="jhM-Pf-F3d"/>
                     </connections>
                 </viewController>
